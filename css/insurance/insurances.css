@@ -1,4 +1,4 @@
-.insurance-bg {
+.insurances-bg {
   background: var(--color-11);
 }
 
@@ -18,7 +18,7 @@
   grid-column: 1/-1;
 }
 
-.insurance-item {
+.insurances-item {
   background-color: var(--color-12);
   padding: 32px 32px 32px 60px;
   display: grid;
@@ -26,31 +26,31 @@
   border-radius: 4px;
 }
 
-.insurance-item h3 {
+.insurances-item h3 {
   margin-bottom: 40px;
 }
 
-.insurance-item span {
+.insurances-item span {
   grid-column: 2;
   display: block;
   text-align: right;
 }
 
-.insurance-item ul {
+.insurances-item ul {
   grid-column: 1/-1;
   margin-bottom: 32px;
 }
 
-.insurance-item li {
+.insurances-item li {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.insurance-item li + li {
+.insurances-item li + li {
   margin-top: 20px;
 }
-.insurance-item li::before {
+.insurances-item li::before {
   content: "";
   display: inline-block;
   width: 13px;
@@ -60,7 +60,7 @@
   left: -21px;
 }
 
-.insurance-item a {
+.insurances-item a {
   grid-column: 1/-1;
 }
 
