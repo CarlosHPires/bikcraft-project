@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
-
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,7 +21,7 @@
     <header class="header-bg">
         <div class="header container">
             <a href="./">
-                <img src="./assets/bikcraft.svg" alt="Bikcraft">
+                <img src="./assets/bikcraft.svg" width="136" height="32" alt="Bikcraft">
             </a>
             <nav aria-label="primaria">
                 <ul class="header-menu font-1-m color-0">
@@ -39,11 +39,12 @@
                 <h1 class="font-1-xxl color-0">Custom made bicycles<span class="color-p1">.</span></h1>
                 <p class="font-2-l color-5">High-quality and high-precision electric bicycles, tailor-made for you.
                     Explore the world at your speed with Bikcraft.</p>
-                <a class="button" href="./bicicletas.html">Escolha a sua</a>
+                <a class="button" href="./bicicletas.html">Choose Yours</a>
             </div>
-            <div>
-                <img src="./assets/fotos/introducao.jpg" alt="Bicicleta elétrica preta">
-            </div>
+            <picture>
+                <source media="(max-width: 800px)" srcset="./assets/bicicletas/nimbus.jpg">
+                <img src="./assets/fotos/introducao.jpg" alt="Eletric black bicycle" width="1280" height="1600">
+            </picture>
         </div>
     </main>
 
@@ -54,21 +55,21 @@
         <ul>
             <li>
                 <a href="./bicycles/magic.html">
-                    <img src="./assets/bicicletas/magic-home.jpg" alt="Black bicycle">
+                    <img src="./assets/bicicletas/magic-home.jpg" width="920" height="1040" alt="Black bicycle">
                     <h3 class="font-1-xl">Magic Might</h3>
                     <span class="font-2-m color-8 ">$ 2499</span>
                 </a>
             </li>
             <li>
                 <a href="./bicycles/nimbus.html">
-                    <img src="./assets/bicicletas/nimbus-home.jpg" alt="Black bicycle">
+                    <img src="./assets/bicicletas/nimbus-home.jpg" width="920" height="1040" alt="Black bicycle">
                     <h3 class="font-1-xl">Nimbus Stark</h3>
-                    <span class="font-2-m color-8 ">$ 4999</span>
+                    <span class="font-2-m color-8">$ 4999</span>
                 </a>
             </li>
             <li>
                 <a href="./bicycles/nebula.html">
-                    <img src="./assets/bicicletas/nebula-home.jpg" alt="Black bicycle">
+                    <img src="./assets/bicicletas/nebula-home.jpg" width="920" height="1040" alt="Black bicycle">
                     <h3 class="font-1-xl">Nebula Cosmic</h3>
                     <span class="font-2-m color-8 ">$ 3999</span>
                 </a>
@@ -89,7 +90,7 @@
                 <a class="link" href="./bicycles.html">Choose a model</a>
                 <div class="technology-advantages">
                     <div>
-                        <img src="./assets/icones/eletrica.svg" alt="">
+                        <img src="./assets/icones/eletrica.svg" width="24" height="24" alt="">
                         <h3 class="font-1-m color-0">Eletric Motor</h3>
                         <p class="font-2-s color-5">Every Bikcraft is equipped with an electric motor that lasts for up to
                             120h. The battery is recharged with your energy spent pedaling.
@@ -97,7 +98,7 @@
                     </div>
 
                     <div>
-                        <img src="./assets/icones/rastreador.svg" alt="">
+                        <img src="./assets/icones/rastreador.svg" width="24" height="24" alt="">
                         <h3 class="font-1-m color-0">Tracker</h3>
                         <p class="font-2-s color-5">We know how precious your Bikcraft is, so we've added trackers and anti-theft systems to ensure your peace of mind.</p>
                     </div>
@@ -106,29 +107,28 @@
             </div>
 
             <div class="technology-image">
-                <img src="./assets/fotos/tecnologia.jpg" alt="">
+                <img src="./assets/fotos/tecnologia.jpg" width="1200" height="1920" alt="">
             </div>
         </div>
     </article>
 
     <section class="partners" aria-label="our partners">
         <h2 class="container font-1-xxl">our partners<span class="color-p1">.</span></h2>
-
         <ul>
-            <li><img src="./assets/parceiros/caravan.svg" alt="Caravan"></li>
-            <li><img src="./assets/parceiros/ranek.svg" alt="ranek.svg"></li>
-            <li><img src="./assets/parceiros/handel.svg" alt="handel.svg"></li>
-            <li><img src="./assets/parceiros/dogs.svg" alt="dogs"></li>
-            <li><img src="./assets/parceiros/lescone.svg" alt="lescone.svg"></li>
-            <li><img src="./assets/parceiros/flexblog.svg" alt="flexblog.svg"></li>
-            <li><img src="./assets/parceiros/wildbeast.svg" alt="wildbeast.svg"></li>
-            <li><img src="./assets/parceiros/surfbot.svg" alt="surfbot.svg"></li>
+            <li><img src="./assets/parceiros/caravan.svg" width="140" height="38" alt="Caravan"></li>
+            <li><img src="./assets/parceiros/ranek.svg" width="149" height="36" alt="ranek.svg"></li>
+            <li><img src="./assets/parceiros/handel.svg" width="139" height="50" alt="handel.svg"></li>
+            <li><img src="./assets/parceiros/dogs.svg" width="152" height="39" alt="dogs"></li>
+            <li><img src="./assets/parceiros/lescone.svg" width="208" height="41" alt="lescone.svg"></li>
+            <li><img src="./assets/parceiros/flexblog.svg" width="165" height="38" alt="flexblog.svg"></li>
+            <li><img src="./assets/parceiros/wildbeast.svg" width="196" height="34" alt="wildbeast.svg"></li>
+            <li><img src="./assets/parceiros/surfbot.svg" width="200" height="49" alt="surfbot.svg"></li>
         </ul>
     </section>
 
     <section class="depositions" aria-label="Depositions">
         <div>
-            <img src="./assets/fotos/depoimento.jpg" alt="Person riding a bikcraft bike">
+            <img src="./assets/fotos/depoimento.jpg" width="1560" height="1360" alt="Person riding a bikcraft bike">
         </div>
         <div class="depositions-content">
             <blockquote class="font-1-xl color-p5">
@@ -176,7 +176,7 @@
 
     <footer class="footer-bg">
         <div class="footer container">
-            <img src="./assets/bikcraft.svg" alt="Bikcraft">
+            <img src="./assets/bikcraft.svg" width="136" height="32" alt="Bikcraft">
             <div class="footer-contact">
                 <h3 class="font-2-l-b color-0">Contact</h3>
                 <ul class="font-2-m color-5">
@@ -187,13 +187,13 @@
                 </ul>
                 <div class="footer-networks">
                     <a href="https://www.instagram.com/carlospires.dev/">
-                        <img src="./assets/redes/instagram.svg" alt="Instagram">
+                        <img src="./assets/redes/instagram.svg" width="24" height="24" alt="Instagram">
                     </a>
                     <a href="https://www.facebook.com/carlos.deoliveirapires/">
-                        <img src="./assets/redes/facebook.svg" alt="Facebook">
+                        <img src="./assets/redes/facebook.svg" width="24" height="24" alt="Facebook">
                     </a>
                     <a href="https://www.youtube.com/channel/UCbGmWblrV594JFJtD6XSuMA">
-                        <img src="./assets/redes/youtube.svg" alt="Youtube">
+                        <img src="./assets/redes/youtube.svg" width="24" height="24" alt="Youtube">
                     </a>
                 </div>
             </div>
@@ -211,7 +211,6 @@
             <p class="footer-copy font-2-m color-6">Bikcraft © Some rights reserved.</p>
         </div>
     </footer>
-
 </body>
 
 </html>
