@@ -53,12 +53,12 @@
   display: none;
 }
 
-.questions dd {
+.js .questions dd {
   padding-left: 20px;
   padding-top: 16px;
   max-width: 80ch;
 }
-.questions dd.activate {
+.js .questions dd.activate {
   display: block;
 }
 
