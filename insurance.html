@@ -9,12 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Insurances.">
 
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
 
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body id="insurances">
@@ -41,7 +43,7 @@
             </div>
         </div>
         <div class="insurances container">
-            <div class="insurances-item">
+            <div class="insurances-item fadeInLeft" data-anime="200">
                 <h3 class="font-1-xl color-6">SILVER</h3>
                 <span class="font-1-xl color-0">$ 99 <span class="font-1-xs color-6">monthly</span>
                 </span>
@@ -54,7 +56,7 @@
                 <a class="button secondary" href="./budget.html?type=insurance&product=silver">Sign up</a>
             </div>
 
-            <div class="insurances-item">
+            <div class="insurances-item fadeInRight" data-anime="400">
                 <h3 class="font-1-xl color-p1">GOLD</h3>
                 <span class="font-1-xl color-0">$ 199 <span class="font-1-xs color-6">monthly</span>
                 </span>
@@ -177,6 +179,7 @@
             <p class="footer-copy font-2-m color-6">Bikcraft © Some rights reserved.</p>
         </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js" />
 </body>
 

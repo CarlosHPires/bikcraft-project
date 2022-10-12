@@ -10,11 +10,14 @@
     <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade,
     feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
 
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
+
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
@@ -36,12 +39,12 @@
     <main class="introduction-bg">
         <div class="introduction container">
             <div class="introduction-content">
-                <h1 class="font-1-xxl color-0">Custom made bicycles<span class="color-p1">.</span></h1>
-                <p class="font-2-l color-5">High-quality and high-precision electric bicycles, tailor-made for you.
+                <h1 class="font-1-xxl color-0 fadeInDown" data-anime="200">Custom made bicycles<span class="color-p1">.</span></h1>
+                <p class="font-2-l color-5 fadeInDown" data-anime="400">High-quality and high-precision electric bicycles, tailor-made for you.
                     Explore the world at your speed with Bikcraft.</p>
-                <a class="button" href="./bicicletas.html">Choose Yours</a>
+                <a class="button fadeInDown" data-anime="600" href="./bicycles.html">Choose Yours</a>
             </div>
-            <picture>
+            <picture data-anime="800" class="fadeInDown">
                 <source media="(max-width: 800px)" srcset="./assets/bicicletas/nimbus.jpg">
                 <img src="./assets/fotos/introducao.jpg" alt="Eletric black bicycle" width="1280" height="1600">
             </picture>
@@ -212,6 +215,7 @@
         </div>
     </footer>
 
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js" />
 
 </body>
